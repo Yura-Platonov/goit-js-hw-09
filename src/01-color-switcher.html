@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color switcher</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #f2f2f2;
+        color: #333;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      button[data-start] {
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #ddd;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>

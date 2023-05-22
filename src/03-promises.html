@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise generator</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .message {
+      display: block;
+      max-width: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      }
+
+      .fulfilled {
+        background-color: #d4edda;
+        color: green;
+      }
+
+      .rejected {
+        background-color: #f8d7da;
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
@@ -24,6 +44,7 @@
       </label>
       <button type="submit">Create promises</button>
     </form>
+    <div id="messages"></div>
 
     <script src="js/03-promises.js" type="module"></script>
   </body>
