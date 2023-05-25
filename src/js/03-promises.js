@@ -26,6 +26,12 @@ form.addEventListener('submit', (event) => {
   const step = parseInt(stepInput.value);
   const amount = parseInt(amountInput.value);
 
+  if (initialDelay < 0 || step < 0 || amount < 0) {
+    // Если хотя бы одно значение отрицательное, выводим сообщение об ошибке
+    alert('Please enter positive values for delay, step, and amount.');
+    return;
+  }
+
   for (let i = 0; i < amount; i++) {
     const position = i + 1;
     const delay = initialDelay + i * step;
